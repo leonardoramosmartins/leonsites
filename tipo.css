@@ -1,0 +1,60 @@
+:root {
+    --font-step--2: clamp(0.78rem, calc(0.78rem + 0.13vw), 0.84rem);
+    --font-step--1: clamp(0.94rem, calc(0.79rem + 0.38vw), 1.13rem);
+    --font-step-0: clamp(1.13rem, calc(0.83rem + 0.50vw), 1.5rem);
+    --font-step-1: clamp(1.13rem, calc(0.83rem + 1.3vw), 2rem);
+    --font-step-2: clamp(1.62rem, calc(0.78rem + 2.09vw), 2.67rem);
+    --font-step-3: clamp(1.94rem, calc(0.66rem + 3.22vw), 3.55rem);
+    --font-step-4: clamp(2.33rem, calc(0.41rem + 4.81vw), 4.74rem);
+    --font-step-5: clamp(2.8rem, calc(-0.01rem + 7.03vw), 6.31rem);
+    --font-step-6: clamp(1.7rem, calc(-0.66rem + 6.22vw), 6.55rem);
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & família= Montserrat:ital,wght@1.900 & display=swap');
+
+/* Esconder o botão por padrão */
+#botao {
+    display: none;
+}
+
+/* Exibir o botão apenas quando o formulário for válido */
+form:valid #botao {
+    display: block;
+}
+.text3 {
+margin-top: 80px;
+
+}
+
+.text3 p {
+    font-size: var(--font-step-0);
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-top: 1%;
+}
+
+.formulario {
+    margin-bottom: -20%;
+}
+
+@media(max-width:1000px) {
+    .text3 p {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media(max-width:690px) {
+    .text3 p {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+
+@media(max-width:500px) {
+    .text3 p {
+        margin-right: 15px;
+        margin-left: 15px;
+        font-size: 99%;
+    }
+}

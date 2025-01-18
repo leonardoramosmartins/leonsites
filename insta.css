@@ -1,0 +1,101 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ínicio botão do whatsapp */
+#div-fixai{
+    position: fixed;
+    bottom: 10px;
+    margin: 0 10px;
+    left: 1px;
+    background: #AA2AA5; 
+    z-index: 10;
+    width: 200px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s all ;
+}
+#div-fixai.shrinki{
+    width: 55px;
+    transition: 0.2s all ;
+     overflow: hidden; 
+    border-radius: 50px;
+}
+#div-fixai img{
+    width:55px ;
+    height: 55px;
+    border-radius: 50%;
+   
+}
+
+#div-fixai a .flex-itensi{
+    display: flex;
+    align-items: center;
+   
+    
+}
+#div-fixai a .flex-itensi span.apareceri{
+transition: 0.2s all;
+opacity: 1;
+z-index: 20;
+
+}
+#div-fixai span{
+    font-size: 12px;
+    display: block;
+    color:var(--cor_laranja); 
+    margin-left: 5.5px;
+    min-width: 200px;
+    opacity: 0; 
+    z-index: 20;
+   
+}
+
+#div-fixai a{
+    text-decoration: none;
+}
+/* animação do botão */
+.flutuari{
+   animation-name: flutuari;
+   animation-duration: 0.6s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-timing-function: ease-in-out;
+}
+
+@media(max-width:1000px) {
+    #div-fixai img{
+        width:40px ;
+        height: 40px;
+        border-radius: 50%;
+       
+    }
+
+    #div-fixai.shrinki{
+        width: 40px;
+    }
+    
+    #div-fixai{
+        bottom: 1px;
+        width: 170px;
+    }
+    
+}
+
+@keyframes flutuari{
+
+    from{
+        transform: translate3d(0,0,0);
+        filter:brightness(100%) ;  
+    }
+    to{
+        transform: translate3d(0px,-15px,0px);
+        filter:brightness(100%) ;  
+    }
+}
+   
+/* fim do botão do whatsapp */

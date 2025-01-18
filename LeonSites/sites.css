@@ -1,0 +1,145 @@
+:root {
+    --font-step--2: clamp(0.78rem, calc(0.78rem + 0.13vw), 0.84rem);
+    --font-step--1: clamp(0.94rem, calc(0.79rem + 0.38vw), 1.13rem);
+    --font-step-0: clamp(1.13rem, calc(0.83rem + 0.50vw), 1.5rem);
+    --font-step-1: clamp(1.13rem, calc(0.83rem + 1.3vw), 2rem);
+    --font-step-2: clamp(1.62rem, calc(0.78rem + 2.09vw), 2.67rem);
+    --font-step-3: clamp(1.94rem, calc(0.66rem + 3.22vw), 3.55rem);
+    --font-step-4: clamp(2.33rem, calc(0.41rem + 4.81vw), 4.74rem);
+    --font-step-5: clamp(2.8rem, calc(-0.01rem + 7.03vw), 6.31rem);
+    --font-step-6: clamp(1.7rem, calc(-0.66rem + 6.22vw), 6.55rem);
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & família= Montserrat:ital,wght@1.900 & display=swap');
+
+.site {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    font-style: 'Barlow';
+    box-shadow: 1px 1px 20px black;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.sites {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    font-style: 'Barlow';
+    box-shadow: 1px 1px 20px black;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.sites img {
+    margin-right: 35%; /* Ajuste as margens conforme necessário */
+    height: 250px;
+    width: auto;
+}
+
+.site img {
+    margin-right: 35%; /* Ajuste as margens conforme necessário */
+    height: 250px;
+    width: auto;
+}
+
+.site1 {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    font-style: 'Barlow';
+    box-shadow: 1px 1px 20px black;
+    margin-top: 40px;
+    justify-content: center;
+
+}
+
+
+
+.site1 img {
+    margin-right: 35%; /* Ajuste as margens conforme necessário */
+    height: 250px;
+    width: auto;
+}
+
+.botao {
+    width: 20%;
+    height: 50px;
+    font-size: var(--font-step-0);
+    border: none;
+    background-color: rgb(4, 0, 255);
+    padding: 5px;
+    width: 150px;
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 7px rgb(62, 59, 255);;
+    border-radius: 7px;
+   cursor: pointer;
+   padding: 9px 8px;
+   font-weight: 900;
+   align-self: center;
+}
+.botao:hover{
+    border: none;
+    background-color: rgb(13, 255, 0);
+    padding: 5px;
+    width: 150px;
+    color: rgb(4, 4, 4);
+    box-shadow: 1px 1px 7px black;
+    border-radius: 7px;
+    padding: 9px 8px;
+    font-weight: 900;
+}
+
+@media(max-width:1000px) {
+    .site{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .site img {
+        width: 100%;
+        display: block;
+        margin: 0 auto; /* Centraliza a logo horizontalmente */
+        height: 250px;
+        width: 250px;
+    }
+
+    .sites{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sites img {
+        width: 100%;
+        display: block;
+        margin: 0 auto; /* Centraliza a logo horizontalmente */
+        height: 250px;
+        width: 250px;
+    }
+    .botao {
+        margin-top: 5%;
+    }
+
+    .site1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .site1 img {
+        width: 100%;
+        display: block;
+        margin: 0 auto; /* Centraliza a logo horizontalmente */
+        height: 400px;
+        width: 400px;
+    }
+}

@@ -1,0 +1,321 @@
+@import url(insta.css);
+@import url(whatsapp.css);
+@import url(form.css);
+@import url(sites.css);
+@import url(tipo.css);
+@import url(cel.css);
+
+:root {
+    --font-step--2: clamp(0.78rem, calc(0.78rem + 0.13vw), 0.84rem);
+    --font-step--1: clamp(0.94rem, calc(0.79rem + 0.38vw), 1.13rem);
+    --font-step-0: clamp(1.13rem, calc(0.83rem + 0.50vw), 1.5rem);
+    --font-step-1: clamp(1.13rem, calc(0.83rem + 1.3vw), 2rem);
+    --font-step-2: clamp(1.62rem, calc(0.78rem + 2.09vw), 2.67rem);
+    --font-step-3: clamp(1.94rem, calc(0.66rem + 3.22vw), 3.55rem);
+    --font-step-4: clamp(2.33rem, calc(0.41rem + 4.81vw), 4.74rem);
+    --font-step-5: clamp(2.8rem, calc(-0.01rem + 7.03vw), 6.31rem);
+    --font-step-6: clamp(1.7rem, calc(-0.66rem + 6.22vw), 6.55rem);
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & família= Montserrat:ital,wght@1.900 & display=swap');
+
+.logo-inicial {
+    position: fixed; /* Fixa o menu no topo */
+    top: 0; /* Alinha ao topo da página */
+    width: 100%;
+    height: 65px; /* Definindo a altura para um melhor ajuste */
+    display: flex; /* Usando flexbox para alinhar logo e menu lado a lado */
+    align-items: center; /* Alinha itens no centro verticalmente */
+    justify-content: space-between; /* Distribui logo e menu nas extremidades */
+    background-color: rgb(23, 20, 219);
+}
+
+.logo {
+    display: flex;
+    grid-area: logo;
+    justify-content: center;
+}
+
+.logo img {
+    height: 65px; /* Ajuste o tamanho da logo */
+    width: auto;
+    margin-right: 20px; /* Espaçamento à direita da logo */
+
+}
+
+
+.menu {
+    width: 100%;
+    grid-area: links;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.menu ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.menu ul li {
+    font-size: var(--font-step--1);
+
+
+}
+
+.menu li {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.menu li::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(0, 2, 109, 0.719);
+    transition: 0.3s all;
+}
+
+.menu li:hover::after {
+    width: 100%;
+}
+
+.texto {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-style: 'Barlow';
+    gap: 20px;
+    box-shadow: 1px 1px 20px black;
+    margin-top: 90px;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.texto p {
+    font-size: var(--font-step-0);
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+.img1 {
+
+    width: 100%;
+}
+
+.texto2 {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-style: 'Barlow';
+    box-shadow: 1px 1px 20px black;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.texto2 p {
+    font-size: var(--font-step-0);
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+.img2 {
+
+    margin-right: 10%;
+    /* Ajuste as margens conforme necessário */
+    width: 30%;
+    height: 340px;
+}
+
+.texto3 {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-style: 'Barlow';
+    box-shadow: 1px 1px 20px black;
+    margin-top: 40px;
+    justify-content: center;
+    border-radius: 7px;
+
+}
+
+
+
+.texto3 p {
+    font-size: var(--font-step-0);
+    font-weight: 500;
+    margin-top: 1%;
+}
+
+.img3 {
+
+    width: 30%;
+
+}
+
+.fim {
+    margin-top: 5%;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "links";
+    background-color: rgb(23, 20, 219);
+}
+
+.fim {
+    display: flex;
+    grid-area: logo;
+    align-items: center;
+    /* alinha verticalmente */
+    text-align: center;
+    /* alinha o texto dentro da div */
+}
+
+.fim img {
+    float: left;
+    /* Alinha a imagem à esquerda */
+    margin-right: 30px;
+    /* Adiciona um espaço entre a imagem e o texto */
+    height: 100%;
+    width: 20%;
+    
+}
+
+.txt p {
+    margin-bottom: 70px;
+    margin-top: 50px;
+    margin-left: 50px;
+    color: aliceblue;
+    font-size: var(--font-step-1);
+}
+
+.txt a {
+    color: aliceblue;
+    font-size: var(--font-step-1);
+}
+
+@media(max-width:1000px) {
+    .texto {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto2 {
+        flex-direction: column;
+    }
+
+    .texto3 {
+        flex-direction: column;
+    }
+
+    .img1 {
+        width: 100%;
+
+    }
+
+    .img2 {
+        width: 100%;
+    }
+
+    .img3 {
+        width: 100%;
+    }
+
+    .menu ul {
+        display: none;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .fim {
+        display: flex;
+        align-items: center;
+        /* alinha verticalmente */
+        text-align: center;
+        /* alinha o texto dentro da div */
+    }
+
+    .fim img {
+        width: 30%;
+        display: block;
+
+    }
+
+    .txt p {
+        margin-bottom: 70px;
+        margin-top: 30px;
+        margin-left: 30px;
+        color: aliceblue;
+        font-size: var(--font-step-1);
+    }
+
+    .txt a {
+        font-size: var(--font-step-1);
+    }
+
+
+}
+
+@media(max-width:690px) {
+    .txt p {
+        margin-bottom: 70px;
+        margin-top: 30px;
+        margin-left: 30px;
+        color: aliceblue;
+        font-size: var(--font-step--1);
+        margin-left: 0px;
+
+    }
+
+    .txt a {
+        font-size: var(--font-step--1);
+    }
+
+    .fim img {
+        width: 30%;
+    }
+
+    .fim {
+        display: flex;
+        align-items: center;
+        /* alinha verticalmente */
+        text-align: center;
+        /* alinha o texto dentro da div */
+    }
+}
+
+@media(max-width:490px) {
+    .txt p {
+        margin-bottom: 70px;
+        margin-top: 30px;
+        margin-left: 30px;
+        color: aliceblue;
+        margin-left: 0px;
+
+    }
+
+    .txt a {
+        font-size: var(--font-step--1);
+    }
+
+    .fim img {
+        width: 50%;
+    }
+}
